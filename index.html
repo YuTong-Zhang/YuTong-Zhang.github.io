@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<body>
+<style>
+
+.Name{
+
+
+
+}
+
+.Text{
+
+  font-family: 'Poiret One', cursive;
+  font-size: 150px;
+  text-align: right;
+
+}
+
+.EmailText{
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  text-align: right;
+
+}
+
+.SideBarText{
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+
+}
+
+.EmailMessage{
+
+float: right;
+font-family: 'Poiret One', cursive;
+font-size: 40px;
+text-align: right;
+
+}
+
+.fa-linkedin-square{
+
+font-size: 40px;
+
+}
+
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 5;
+
+  -moz-column-count:    5;
+
+  column-count:         5;
+  padding: 1px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+@media (max-width: 3000px) {
+  #photos {
+  -moz-column-count:    5;
+  -webkit-column-count: 5;
+  column-count:         5;
+  }
+}
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+img:hover{
+
+opacity: 0.8;
+
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="Website.css">
+<title> Julia Zhang </title>
+
+<head> <div class = "Text">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  Julia Zhang
+</div>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="startbootstrap-simple-sidebar-gh-pages/css/bootstrap.min.css" rel="stylesheet">
+<link href="startbootstrap-simple-sidebar-gh-pages/css/simple-sidebar.css" rel="stylesheet">
+<link href="https://npmcdn.com/masonry-layout@4.1.1/dist/masonry.pkgd.min.js" rel="javascript">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav SideBarText">
+                <li class = "AboutMe">
+                    <a href="#"><i class="fa-2x fa fa-odnoklassniki" aria-hidden="true"></i>
+                        &nbsp; About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="Rice University_Julia_Zhang.pdf"><i class="fa-2x fa fa-paperclip" aria-hidden="true"></i> &nbsp; Resume</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yutong-julia-zhang-954b53b3?trk=nav_responsive_tab_profile_pic"> <i class="fa-2x fa fa-linkedin-square" aria-hidden="true"></i> &nbsp; LinkedIn</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-2x fa fa-github" aria-hidden="true"></i> &nbsp; GitHub</a>
+                </li>
+                <li class = "Email">
+                    <a href="#"><i class="fa-2x fa fa-envelope-square" aria-hidden="true"></i> &nbsp; Email</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class = "EmailText">
+                    <div class="col-lg-12">
+                      <span class = "Pad">
+                        <p> Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful
+                          devices and products. I am passionate about work that can empower others and connect me to my community.
+                         </p>
+                     </span>
+                    </div>
+                    <div class = "EmailText2">
+                      <p></p>
+                    </div>
+                    <div id = "photos">
+                      <img src = "Singing.jpg" alt="Landscape">
+                      <img src = "IMG_8853.jpg" alt="Landscape">
+                      <img src = "IMG_8209.jpg" alt="Landscape">
+                      <img src = "Houston.jpg" alt="Landscape">
+                      <img src = "BestFriend.jpg" alt="Landscape">
+                      <img src = "IMG_7642.jpg" alt="Landscape">
+                      <img src = "IMG_7893.jpg" alt="Landscape">
+                      <img src = "Travel.jpg" alt="Landscape">
+                      <img src = "Rice.jpg" alt="Landscape">
+                      <img src = "Lubbock.jpg" alt="Landscape">
+
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="startbootstrap-simple-sidebar-gh-pages/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="startbootstrap-simple-sidebar-gh-pages/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+<link rel = â€œlink.comâ€ >
+<a href =â€ google.comâ€   </a>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+
+<script type = "text/javascript">
+
+  $(".Email").click(function() {
+    $(".col-lg-12").hide();
+    $(".EmailText2").text("yz60@rice.edu");
+    return false;
+  });
+
+  $(".AboutMe").click(function() {
+    $(".col-lg-12").hide();
+    $(".EmailText2").text("Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful devices and products. I am passionate about work that can empower others and connect me to my community.");
+    return false;
+  });
+
+</script>
