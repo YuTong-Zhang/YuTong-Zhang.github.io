@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<body>
+<html>
+<head>
 <style>
 
-.Name{
+body{
 
-
+background-color:	#F0FFFF;
 
 }
 
@@ -17,6 +18,7 @@
 }
 
 .EmailText{
+
   font-family: 'Poiret One', cursive;
   font-size: 30px;
   text-align: right;
@@ -104,11 +106,11 @@ opacity: 0.8;
 
 }
 </style>
-
+</head>
 <link rel="stylesheet" type="text/css" href="Website.css">
 <title> Julia Zhang </title>
 
-<head> <div class = "Text">
+<body> <div class = "Text">
 <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   Julia Zhang
@@ -123,9 +125,7 @@ opacity: 0.8;
 <link href="startbootstrap-simple-sidebar-gh-pages/css/bootstrap.min.css" rel="stylesheet">
 <link href="startbootstrap-simple-sidebar-gh-pages/css/simple-sidebar.css" rel="stylesheet">
 <link href="https://npmcdn.com/masonry-layout@4.1.1/dist/masonry.pkgd.min.js" rel="javascript">
-</head>
 
-<body>
 
     <div id="wrapper">
 
@@ -161,19 +161,21 @@ opacity: 0.8;
                       <span class = "Pad">
                         <p> Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful
                           devices and products. I am passionate about work that can empower others and connect me to my community.
-                         </p>
+                       </p>
+                       <p> <br> </p>
                      </span>
                     </div>
                     <div class = "EmailText2">
                       <p></p>
                     </div>
                     <div id = "photos">
+
                       <img src = "Singing.jpg" alt="Landscape">
                       <img src = "IMG_8853.jpg" alt="Landscape">
                       <img src = "IMG_8209.jpg" alt="Landscape">
                       <img src = "Houston.jpg" alt="Landscape">
-                      <img src = "BestFriend.jpg" alt="Landscape">
                       <img src = "IMG_7642.jpg" alt="Landscape">
+                        <img src = "BestFriend.jpg" alt="Landscape">
                       <img src = "IMG_7893.jpg" alt="Landscape">
                       <img src = "Travel.jpg" alt="Landscape">
                       <img src = "Rice.jpg" alt="Landscape">
@@ -223,7 +225,8 @@ opacity: 0.8;
   $(".AboutMe").click(function() {
     $(".col-lg-12").hide();
     $("#photos").show();
-    $(".EmailText2").text("Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful devices and products. I am passionate about work that can empower others and connect me to my community.");
+    $(".EmailText2").html("Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful devices and products. I am passionate about work that can empower others and connect me to my community.<br> ");
+    $(".EmailText2").append("<p> <br> </p>");
     return false;
   });
 
