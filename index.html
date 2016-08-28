@@ -144,10 +144,10 @@ opacity: 0.8;
                     <a href="https://www.linkedin.com/in/yutong-julia-zhang-954b53b3?trk=nav_responsive_tab_profile_pic"> <i class="fa-2x fa fa-linkedin-square" aria-hidden="true"></i> &nbsp; LinkedIn</a>
                 </li>
                 <li>
-                    <a href="https://github.com/YuTong-Zhang"><i class="fa-2x fa fa-github" aria-hidden="true"></i> &nbsp; GitHub</a>
+                    <a href="#"><i class="fa-2x fa fa-github" aria-hidden="true"></i> &nbsp; GitHub</a>
                 </li>
                 <li class = "Email">
-                    <a href="#"><i class="fa-2x fa fa-envelope-square" aria-hidden="true"></i> &nbsp; Email</a>
+                    <a href="#"><i class="fa-2x fa fa-envelope-square" aria-hidden="true"></i> &nbsp; Contact </a>
                 </li>
             </ul>
         </div>
@@ -214,12 +214,15 @@ opacity: 0.8;
 
   $(".Email").click(function() {
     $(".col-lg-12").hide();
-    $(".EmailText2").text("yz60@rice.edu");
+    $("#photos").hide();
+    $(".EmailText2").html("Email: yz60@rice.edu<br>Phone Number: (806) 790-4100<br>Address: 23 Sunset Blvd, Houston, TX, 77005");
+
     return false;
   });
 
   $(".AboutMe").click(function() {
     $(".col-lg-12").hide();
+    $("#photos").show();
     $(".EmailText2").text("Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful devices and products. I am passionate about work that can empower others and connect me to my community.");
     return false;
   });
