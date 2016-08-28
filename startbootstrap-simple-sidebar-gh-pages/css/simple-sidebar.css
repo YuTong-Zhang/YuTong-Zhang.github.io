@@ -1,233 +1,134 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
 
-body{
+ body {
+    overflow-x: hidden;
+ }
 
-background-color:	#F0FFFF;
+/* Toggle Styles */
 
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.Text{
-
-  font-family: 'Poiret One', cursive;
-  font-size: 150px;
-  text-align: right;
-
+#wrapper.toggled {
+    padding-left: 250px;
 }
 
-.EmailText{
-
-  font-family: 'Poiret One', cursive;
-  font-size: 30px;
-  text-align: right;
-
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    background-color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 20px;
 }
 
-.SideBarText{
-  font-family: 'Poiret One', cursive;
-  font-size: 30px;
-
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
 }
 
-.EmailMessage{
-
-float: right;
-font-family: 'Poiret One', cursive;
-font-size: 40px;
-text-align: right;
-
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
 }
 
-.fa-linkedin-square{
-
-font-size: 40px;
-
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
 }
 
+/* Sidebar Styles */
 
-#photos {
-  /* Prevent vertical gaps */
-  line-height: 0;
-
-  -webkit-column-count: 5;
-
-  -moz-column-count:    5;
-
-  column-count:         5;
-  padding: 1px;
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-#photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-}
-@media (max-width: 3000px) {
-  #photos {
-  -moz-column-count:    5;
-  -webkit-column-count: 5;
-  column-count:         5;
-  }
-}
-@media (max-width: 1200px) {
-  #photos {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
-  }
-}
-@media (max-width: 1000px) {
-  #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-}
-@media (max-width: 800px) {
-  #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-}
-@media (max-width: 400px) {
-  #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    background-color: white;
 }
 
-img:hover{
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
 
-opacity: 0.8;
-
+    color: #999999;
+    background-color: white;
 }
-</style>
-</head>
-<link rel="stylesheet" type="text/css" href="Website.css">
-<title> Julia Zhang </title>
 
-<body> <div class = "Text">
-<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  Julia Zhang
-</div>
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    background: white;
+    color: black;
+}
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
 
-<link href="startbootstrap-simple-sidebar-gh-pages/css/bootstrap.min.css" rel="stylesheet">
-<link href="startbootstrap-simple-sidebar-gh-pages/css/simple-sidebar.css" rel="stylesheet">
-<link href="https://npmcdn.com/masonry-layout@4.1.1/dist/masonry.pkgd.min.js" rel="javascript">
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
 
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
 
-    <div id="wrapper">
+.sidebar-nav > .sidebar-brand a:hover {
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav SideBarText">
-                <li class = "AboutMe">
-                    <a href="#"><i class="fa-2x fa fa-odnoklassniki" aria-hidden="true"></i>
-                        &nbsp; About Me
-                    </a>
-                </li>
-                <li>
-                    <a href="Rice University_Julia_Zhang.pdf"><i class="fa-2x fa fa-paperclip" aria-hidden="true"></i> &nbsp; Resume</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/yutong-julia-zhang-954b53b3?trk=nav_responsive_tab_profile_pic"> <i class="fa-2x fa fa-linkedin-square" aria-hidden="true"></i> &nbsp; LinkedIn</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-2x fa fa-github" aria-hidden="true"></i> &nbsp; GitHub</a>
-                </li>
-                <li class = "Email">
-                    <a href="#"><i class="fa-2x fa fa-envelope-square" aria-hidden="true"></i> &nbsp; Contact </a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class = "EmailText">
-                    <div class="col-lg-12">
-                      <span class = "Pad">
-                        <p> Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful
-                          devices and products. I am passionate about work that can empower others and connect me to my community.
-                       </p>
-                       <p> <br> </p>
-                     </span>
-                    </div>
-                    <div class = "EmailText2">
-                      <p></p>
-                    </div>
-                    <div id = "photos">
+    background: none;
+}
 
-                      <img src = "Singing.jpg" alt="Landscape">
-                      <img src = "IMG_8853.jpg" alt="Landscape">
-                      <img src = "IMG_8209.jpg" alt="Landscape">
-                      <img src = "Houston.jpg" alt="Landscape">
-                      <img src = "IMG_7642.jpg" alt="Landscape">
-                        <img src = "BestFriend.jpg" alt="Landscape">
-                      <img src = "IMG_7893.jpg" alt="Landscape">
-                      <img src = "Travel.jpg" alt="Landscape">
-                      <img src = "Rice.jpg" alt="Landscape">
-                      <img src = "Lubbock.jpg" alt="Landscape">
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
 
+    #wrapper.toggled {
+        padding-left: 0;
+    }
 
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
+    #sidebar-wrapper {
+        width: 250px;
+    }
 
-    </div>
-    <!-- /#wrapper -->
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
 
-    <!-- jQuery -->
-    <script src="startbootstrap-simple-sidebar-gh-pages/js/jquery.js"></script>
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="startbootstrap-simple-sidebar-gh-pages/js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
-
-</body>
-
-<link rel = â€œlink.comâ€ >
-<a href =â€ google.comâ€   </a>
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
-
-<script type = "text/javascript">
-
-  $(".Email").click(function() {
-    $(".col-lg-12").hide();
-    $("#photos").hide();
-    $(".EmailText2").html("Email: yz60@rice.edu<br>Phone Number: (806) 790-4100<br>Address: 23 Sunset Blvd, Houston, TX, 77005");
-
-    return false;
-  });
-
-  $(".AboutMe").click(function() {
-    $(".col-lg-12").hide();
-    $("#photos").show();
-    $(".EmailText2").html("Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful devices and products. I am passionate about work that can empower others and connect me to my community.<br> ");
-    $(".EmailText2").append("<p> <br> </p>");
-    return false;
-  });
-
-</script>
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
