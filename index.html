@@ -11,7 +11,7 @@ background-color:	#F0FFFF;
 
 .Text{
 
-  font-family: 'Poiret One', cursive;
+  font-family: 'Cormorant Unicase', serif;
   font-size: 150px;
   text-align: right;
 
@@ -19,14 +19,14 @@ background-color:	#F0FFFF;
 
 .EmailText{
 
-  font-family: 'Poiret One', cursive;
+  font-family: 'Athiti', sans-serif;
   font-size: 30px;
-  text-align: right;
+  text-align: left;
 
 }
 
 .SideBarText{
-  font-family: 'Poiret One', cursive;
+  font-family: 'Cormorant Unicase', serif;
   font-size: 30px;
 
 }
@@ -34,9 +34,9 @@ background-color:	#F0FFFF;
 .EmailMessage{
 
 float: right;
-font-family: 'Poiret One', cursive;
-font-size: 40px;
-text-align: right;
+font-family: 'Athiti', sans-serif;
+font-size: 30px;
+text-align: left;
 
 }
 
@@ -105,13 +105,56 @@ img:hover{
 opacity: 0.8;
 
 }
+
+.Experience {
+
+text-align: left;
+
+}
+.Projects {
+
+text-align: left;
+
+}
+
+.Pad {
+
+text-align: left;
+
+}
+
+.EmailText2 {
+
+text-align: left;
+
+}
+.caption {
+  position: relative
+}
+
+.spanCaption {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255,255,255,.8);
+}
+
+.caption:hover .spanCaption{
+  display: block
+}
+
 </style>
 </head>
 <link rel="stylesheet" type="text/css" href="Website.css">
 <title> Julia Zhang </title>
 
-<body> <div class = "Text">
-<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Athiti|Cormorant+Unicase|Poiret+One|Scope+One|Source+Sans+Pro" rel="stylesheet">
+
+
+<div class = "Text">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   Julia Zhang
 </div>
@@ -143,10 +186,10 @@ opacity: 0.8;
                 <li>
                     <a href="https://www.linkedin.com/in/yutong-julia-zhang-954b53b3?trk=nav_responsive_tab_profile_pic"> <i class="fa-2x fa fa-linkedin-square" aria-hidden="true"></i> &nbsp; LinkedIn</a>
                 </li>
-                <li class = "Experience">
+                <li class = "Experience2">
                     <a href="#"> <i class="fa-2x fa fa-building" aria-hidden="true"></i> &nbsp; Experience</a>
                 </li>
-                <li class = "Projects">
+                <li class = "Projects2">
                     <a href="#"> <i class="fa-2x fa fa-wrench" aria-hidden="true"></i> &nbsp; Projects</a>
                 </li>
                 <li>
@@ -165,18 +208,99 @@ opacity: 0.8;
                     <div class = "EmailText">
                     <div class="col-lg-12">
                       <span class = "Pad">
-                        <p> Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful
+                        <p> Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different
+                          technologies and combining them to create impactful
                           devices and products. I am passionate about work that can empower others and connect me to my community.
                        </p>
+                       <p> <br>
+                       </p>
+                       <p> I am currently a senior at Rice University studying Bioengineering with an interest in Computer Science
+                         and Electrical Engineering. I grew up in Lubbock and some of my hobbies include eating, reading, playing with circuits
+                         and singing.
                        <p> <br> </p>
                      </span>
                     </div>
                     <div class = "EmailText2">
                       <p></p>
                     </div>
-                    <div id = "photos">
+                    <div class = "Experience">
+                      <h1> General Electric Healthcare | Software Intern </h1>
+                      <p> Summer 2016 | UV Performance Team | Barrington, Illinois </p>
+                      <p> Improved performance of Centricity Universal Viewer by implementing database caching and multithreading operations.
+                        Reduced image loading time by 25% and conducted performance testing. Built proofs of concept (image fetching
+                        servlet and search engine) for product troubleshooting improvement.</p>
+                      <p> <br> </p>
 
-                      <img src = "Singing.jpg" alt="Landscape">
+                      <h1> NSF REU at Texas Tech University | Research Intern</h1>
+                      <p> Summer 2014 | Healthcare Solutions Team | Lubbock, Texas
+                      <p> Designed an Answer Set Prolog computer program that accurately recommends treatments derived from clinical practice
+                        guidelines for various co-morbid diseases. Explored declarative programming, specifically ASP, as a tool to solve
+                        real world problems.</p>
+                      <p><br> </p>
+
+                      <h1> Pediatric Cardiac Engineering Lab at Texas Children's Hospital | Research Assistant </h1>
+                      <p> August 2014 - May 2016 | Cardiac Patch Solutions | Houston, Texas </p>
+                      <p>Led a project investigating the applicability of polyurethane as part of a hybrid cardiac patch for the creation
+                        of an autologous and contractile tissue engineered device for congenital heart defects. Assessing the viability
+                        of stem cells in hybrid patch to attain a pre-vascularized patch.</p>
+                      <p> <br> </p>
+
+                    </div>
+                    <div class = "Projects">
+                      <h1> Electromyograph </h1>
+                      <p>  Fall 2015 | Medical Device | LabVIEW + Analog Circuitry </p>
+                      <p> An accurate and low-cost device that detects and processes muscle contractions as well as translates analog signals into
+                        relevant medical data. Comprised of signal processing hardware and LabVIEW sofware. This instrument
+                      performs peak detection and time calculation in order to extract reflex times.</p>
+                      <a href = "EMGReport.pdf" > Electromyograph Technical Report <br></a>
+                      <a href = "UserManual.pdf"> Electromyograph User Manual </a>
+                      <p> <br> </p>
+                      <h1> Optical Immunoassay System </h1>
+                      <p> Fall 2015 | Medical Device | LabVIEW + Analog Circuitry </p>
+                      <p> Engineered an electronic circuit and corresponding LabVIEW software for an optical immunoassay that can
+                         precisely and accurately test whole blood for particular analytes through the analysis of light diffraction
+                          by nanoshells. </p>
+                      <a href = "OIAReport.pdf" > Optical Immunoassay Technical Report <br></a>
+                      <p> <br> </p>
+                      <h1> Pulse Oximeter </h1>
+                      <p> Spring 2015 | Medical Device | LabVIEW + Analog Circuitry </p>
+                      <p> Designed amplification and filtering hardware as well as LabVIEW software that performs peak detection
+                        and de-multiplexing to translate electronic information into oxygen saturation  </p>
+                      <p> <br> </p>
+                      <h1> Fluid Flow Lung Model </h1>
+                      <p> Fall 2014 | Computation Model | MATLAB </p>
+                      <p> Constructed an accurate MATLAB model of the lungs that can determine the gaseous compositions of total lung
+                         capacity and arterial blood. Models air mixing, humidifying, and diffusion into blood stream.  </p>
+                      <p> <br> </p>
+                      <h1> Bronchial Stent </h1>
+                      <p> Fall 2014 | Design Proposal | Auto-CAD </p>
+                      <p> Designed an implantable, low-maintenance and user-friendly device that utilizes resistive pressure sensors
+                        to detect for bronchial constriction. Device can provide early detection of asthma attacks.</p>
+                      <p> <br> </p>
+                      <h1> GE Emerging Technologies Project </h1>
+                      <p> Summer 2016 | Web Application | HTML + CSS + jQuery </p>
+                      <p> Created a web application that verifies server and website availability of websites to help employees
+                        better troubleshoot their problems. </p>
+                      <p> <br> </p>
+                      <h1> GE Emerging Technologies Project </h1>
+                      <p> Summer 2016 | Web Application | HTML + CSS + jQuery </p>
+                      <p> Created a web application that verifies server and website availability of websites to help employees
+                        better troubleshoot their problems. </p>
+                      <p> <br> </p>
+
+                      <h1> SynerGE Innovation Challenge </h1>
+                      <p> Summer 2016 | Customer Experience Proposal </p>
+                      <p> Collaborated with a team to propose an artificial intelligence system that can improve customer experience
+                        to the Chief Marketing Officer of GE. Voted most innovative of the intern pitches. </p>
+                      <p> <br> </p>
+
+
+                    </div>
+                    <div id = "photos">
+                      <div class = "caption">
+                        <img src = "Singing.jpg" alt="Landscape">
+                        <span class = "captionSpan"> Singing </span>
+                      </div>
                       <img src = "IMG_8853.jpg" alt="Landscape">
                       <img src = "IMG_8209.jpg" alt="Landscape">
                       <img src = "Houston.jpg" alt="Landscape">
@@ -219,10 +343,18 @@ opacity: 0.8;
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
 
 <script type = "text/javascript">
+  $(document).ready(function() {
+    $('.Experience').hide();
+    $('.Projects').hide();
+    return false;
+  });
 
   $(".Email").click(function() {
     $(".col-lg-12").hide();
     $("#photos").hide();
+    $(".Experience").hide();
+    $('.Projects').hide();
+    $(".EmailText2").show();
     $(".EmailText2").html("Email: yz60@rice.edu<br>Phone Number: (806) 790-4100<br>Address: 23 Sunset Blvd, Houston, TX, 77005");
 
     return false;
@@ -231,21 +363,28 @@ opacity: 0.8;
   $(".AboutMe").click(function() {
     $(".col-lg-12").hide();
     $("#photos").show();
+    $(".Experience").hide();
+    $('.Projects').hide();
+    $(".EmailText2").show();
     $(".EmailText2").html("Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful devices and products. I am passionate about work that can empower others and connect me to my community.<br> ");
     $(".EmailText2").append("<p> <br> </p>");
     return false;
   });
 
-  $(".Experience").click(function() {
+  $(".Experience2").click(function() {
     $(".col-lg-12").hide();
     $("#photos").hide();
-    $(".EmailText2").html("");
+    $(".Experience").show();
+    $(".EmailText2").hide();
+    $('.Projects').hide();
     return false;
   });
-  $(".Project").click(function() {
+  $(".Projects2").click(function() {
     $(".col-lg-12").hide();
     $("#photos").hide();
-    $(".EmailText2").html("");
+    $(".EmailText2").hide();
+    $(".Experience").hide();
+    $('.Projects').show();
     return false;
   });
 
