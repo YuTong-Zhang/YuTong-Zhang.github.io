@@ -138,13 +138,19 @@ opacity: 0.8;
                     </a>
                 </li>
                 <li>
-                    <a href="Rice University_Julia_Zhang.pdf"><i class="fa-2x fa fa-paperclip" aria-hidden="true"></i> &nbsp; Resume</a>
+                    <a href="JuliaResume2016a.pdf"><i class="fa-2x fa fa-paperclip" aria-hidden="true"></i> &nbsp; Resume</a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/yutong-julia-zhang-954b53b3?trk=nav_responsive_tab_profile_pic"> <i class="fa-2x fa fa-linkedin-square" aria-hidden="true"></i> &nbsp; LinkedIn</a>
                 </li>
+                <li class = "Experience">
+                    <a href="#"> <i class="fa-2x fa fa-building" aria-hidden="true"></i> &nbsp; Experience</a>
+                </li>
+                <li class = "Projects">
+                    <a href="#"> <i class="fa-2x fa fa-wrench" aria-hidden="true"></i> &nbsp; Projects</a>
+                </li>
                 <li>
-                    <a href="#"><i class="fa-2x fa fa-github" aria-hidden="true"></i> &nbsp; GitHub</a>
+                    <a href="https://github.com/YuTong-Zhang"><i class="fa-2x fa fa-github" aria-hidden="true"></i> &nbsp; GitHub</a>
                 </li>
                 <li class = "Email">
                     <a href="#"><i class="fa-2x fa fa-envelope-square" aria-hidden="true"></i> &nbsp; Contact </a>
@@ -227,6 +233,19 @@ opacity: 0.8;
     $("#photos").show();
     $(".EmailText2").html("Hi. I am Julia, an engineer who wants to chase challenges and solve problems. I love learning about different technologies and combining them to create impactful devices and products. I am passionate about work that can empower others and connect me to my community.<br> ");
     $(".EmailText2").append("<p> <br> </p>");
+    return false;
+  });
+
+  $(".Experience").click(function() {
+    $(".col-lg-12").hide();
+    $("#photos").hide();
+    $(".EmailText2").html("");
+    return false;
+  });
+  $(".Project").click(function() {
+    $(".col-lg-12").hide();
+    $("#photos").hide();
+    $(".EmailText2").html("");
     return false;
   });
 
