@@ -1,152 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
 
-body{
-
-background-color:	#F0FFFF;
-
-}
-
-.Text{
-
-  font-family: 'Cormorant Unicase', serif;
-  font-size: 150px;
-  text-align: right;
-
-}
-
-.EmailText{
-
-  font-family: 'Athiti', sans-serif;
-  font-size: 30px;
-  text-align: left;
-
-}
-
-.SideBarText{
-  font-family: 'Cormorant Unicase', serif;
-  font-size: 30px;
-
-}
-
-.EmailMessage{
-
-float: right;
-font-family: 'Athiti', sans-serif;
-font-size: 30px;
-text-align: left;
-
-}
-
-.fa-linkedin-square{
-
-font-size: 40px;
-
-}
-
-
-#photos {
-  /* Prevent vertical gaps */
-  line-height: 0;
-
-  -webkit-column-count: 5;
-
-  -moz-column-count:    5;
-
-  column-count:         5;
-  padding: 1px;
-}
-
-#photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-}
-@media (max-width: 3000px) {
-  #photos {
-  -moz-column-count:    5;
-  -webkit-column-count: 5;
-  column-count:         5;
-  }
-}
-@media (max-width: 1200px) {
-  #photos {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
-  }
-}
-@media (max-width: 1000px) {
-  #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-}
-@media (max-width: 800px) {
-  #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-}
-@media (max-width: 400px) {
-  #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
-}
-
-img:hover{
-
-opacity: 0.8;
-
-}
-
-.Experience {
-
-text-align: left;
-
-}
-.Projects {
-
-text-align: left;
-
-}
-
-.Pad {
-
-text-align: left;
-
-}
-
-.EmailText2 {
-
-text-align: left;
-
-}
-.caption {
-  position: relative
-}
-
-.spanCaption {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background: rgba(255,255,255,.8);
-}
-
-.caption:hover .spanCaption{
-  display: block
-}
-
-</style>
-</head>
 <link rel="stylesheet" type="text/css" href="Website.css">
 <title> Julia Zhang </title>
 
@@ -164,12 +18,12 @@ text-align: left;
 <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-
+<link href="WebsiteStyleSheet.css" rel="stylesheet">
 <link href="startbootstrap-simple-sidebar-gh-pages/css/bootstrap.min.css" rel="stylesheet">
 <link href="startbootstrap-simple-sidebar-gh-pages/css/simple-sidebar.css" rel="stylesheet">
 <link href="https://npmcdn.com/masonry-layout@4.1.1/dist/masonry.pkgd.min.js" rel="javascript">
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <div id="wrapper">
 
         <!-- Sidebar -->
@@ -181,7 +35,7 @@ text-align: left;
                     </a>
                 </li>
                 <li>
-                    <a href="JuliaResume2016a.pdf"><i class="fa-2x fa fa-paperclip" aria-hidden="true"></i> &nbsp; Resume</a>
+                    <a href="JuliaResume2016.pdf"><i class="fa-2x fa fa-paperclip" aria-hidden="true"></i> &nbsp; Resume</a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/yutong-julia-zhang-954b53b3?trk=nav_responsive_tab_profile_pic"> <i class="fa-2x fa fa-linkedin-square" aria-hidden="true"></i> &nbsp; LinkedIn</a>
@@ -215,8 +69,9 @@ text-align: left;
                        <p> <br>
                        </p>
                        <p> I am currently a senior at Rice University studying Bioengineering with an interest in Computer Science
-                         and Electrical Engineering. I grew up in Lubbock and some of my hobbies include eating, reading, playing with circuits
-                         and singing.
+                         and Electrical Engineering. I grew up in Lubbock, Texas and some of my hobbies include eating lots of food
+                         , reading bestselling non-fiction books, playing with circuits
+                         and singing classical pieces.
                        <p> <br> </p>
                      </span>
                     </div>
@@ -226,67 +81,75 @@ text-align: left;
                     <div class = "Experience">
                       <h1> General Electric Healthcare | Software Intern </h1>
                       <p> Summer 2016 | UV Performance Team | Barrington, Illinois </p>
-                      <p> Improved performance of Centricity Universal Viewer by implementing database caching and multithreading operations.
-                        Reduced image loading time by 25% and conducted performance testing. Built proofs of concept (image fetching
-                        servlet and search engine) for product troubleshooting improvement.</p>
+                      <p> Worked with Centricity Universal Viewer Controller team to improve application performance by
+                        implementing database caching and multithreading operations.
+                        Reduced image loading time and conducted performance testing. Built proofs of concept -- an image fetching servlet
+                        and a search engine for product troubleshooting improvement.</p>
                       <p> <br> </p>
 
                       <h1> NSF REU at Texas Tech University | Research Intern</h1>
                       <p> Summer 2014 | Healthcare Solutions Team | Lubbock, Texas
                       <p> Designed an Answer Set Prolog computer program that accurately recommends treatments derived from clinical practice
-                        guidelines for various co-morbid diseases. Explored declarative programming, specifically ASP, as a tool to solve
+                        guidelines for various co-morbid diseases. The program takes in illnesses and outputs treatment plans that have eliminated
+                        inconsistencies and overlapping information. Explored declarative programming, specifically ASP, as a tool to solve
                         real world problems.</p>
                       <p><br> </p>
 
                       <h1> Pediatric Cardiac Engineering Lab at Texas Children's Hospital | Research Assistant </h1>
                       <p> August 2014 - May 2016 | Cardiac Patch Solutions | Houston, Texas </p>
                       <p>Led a project investigating the applicability of polyurethane as part of a hybrid cardiac patch for the creation
-                        of an autologous and contractile tissue engineered device for congenital heart defects. Assessing the viability
+                        of an autologous and contractile tissue engineered device for congenital heart defects. Assessed the viability
                         of stem cells in hybrid patch to attain a pre-vascularized patch.</p>
                       <p> <br> </p>
 
                     </div>
                     <div class = "Projects">
+                      <h1> Fluid Flow Lung Model </h1>
+                      <p> Fall 2014 | Computation Model | MATLAB </p>
+                      <p> A physiologically accurate, computational model of the lungs that can determine the gaseous compositions of total lung
+                         capacity and arterial blood. Models air mixing, humidifying, and diffusion into blood stream by utilizing
+                         fluid flow and mixing principles.  </p>
+                         <a href = "ComputationalModelTechReport.pdf" > Optical Immunoassay Technical Report <br></a>
+                           <a href="https://github.com/YuTong-Zhang"> Model Code</a>
+                      <p> <br> </p>
+                      <h1> GE Emerging Technologies Project </h1>
+                      <p> Summer 2016 | Web Application | HTML + CSS + jQuery </p>
+                      <p> Created a web application that verifies server and website availability of websites to help employees
+                        better troubleshoot their problems. Managed website deployment onto server.</p>
+                        <a href="https://github.com/YuTong-Zhang"> Application Code</a>
+                      <p> <br> </p>
                       <h1> Electromyograph </h1>
                       <p>  Fall 2015 | Medical Device | LabVIEW + Analog Circuitry </p>
                       <p> An accurate and low-cost device that detects and processes muscle contractions as well as translates analog signals into
-                        relevant medical data. Comprised of signal processing hardware and LabVIEW sofware. This instrument
+                        relevant medical data. Comprised of hardware that filters and amplifies the muscle signal and software that
                       performs peak detection and time calculation in order to extract reflex times.</p>
                       <a href = "EMGReport.pdf" > Electromyograph Technical Report <br></a>
                       <a href = "UserManual.pdf"> Electromyograph User Manual </a>
                       <p> <br> </p>
                       <h1> Optical Immunoassay System </h1>
                       <p> Fall 2015 | Medical Device | LabVIEW + Analog Circuitry </p>
-                      <p> Engineered an electronic circuit and corresponding LabVIEW software for an optical immunoassay that can
+                      <p> An investigative system that that can
                          precisely and accurately test whole blood for particular analytes through the analysis of light diffraction
-                          by nanoshells. </p>
+                          by nanoshells. Hardware was implemented to process the signal recieved from photosensor and software was used
+                        to translate signals into concentrations. </p>
                       <a href = "OIAReport.pdf" > Optical Immunoassay Technical Report <br></a>
                       <p> <br> </p>
                       <h1> Pulse Oximeter </h1>
                       <p> Spring 2015 | Medical Device | LabVIEW + Analog Circuitry </p>
-                      <p> Designed amplification and filtering hardware as well as LabVIEW software that performs peak detection
-                        and de-multiplexing to translate electronic information into oxygen saturation  </p>
+                      <p> A cost-effective and accurate medical device that that detects for oxygen saturation and pulse.
+                        Incorporates signal processing hardware and software that performs peak detection
+                        and de-multiplexing to translate electronic information into oxygen saturation and pulse.  </p>
+                        <a href = "FinalReportDraft.pdf" > Pulse Oximeter Technical Report <br></a>
+                        <a href = "Final Block Diagram.pdf" > Pulse Oximeter Block Diagram <br></a>
                       <p> <br> </p>
-                      <h1> Fluid Flow Lung Model </h1>
-                      <p> Fall 2014 | Computation Model | MATLAB </p>
-                      <p> Constructed an accurate MATLAB model of the lungs that can determine the gaseous compositions of total lung
-                         capacity and arterial blood. Models air mixing, humidifying, and diffusion into blood stream.  </p>
-                      <p> <br> </p>
+
                       <h1> Bronchial Stent </h1>
                       <p> Fall 2014 | Design Proposal | Auto-CAD </p>
-                      <p> Designed an implantable, low-maintenance and user-friendly device that utilizes resistive pressure sensors
+                      <p> An implantable, low-maintenance and user-friendly device that utilizes resistive pressure sensors
                         to detect for bronchial constriction. Device can provide early detection of asthma attacks.</p>
+                        <a href = "FinalPaper.pdf" > Bronchial Stent Technical Report <br></a>
                       <p> <br> </p>
-                      <h1> GE Emerging Technologies Project </h1>
-                      <p> Summer 2016 | Web Application | HTML + CSS + jQuery </p>
-                      <p> Created a web application that verifies server and website availability of websites to help employees
-                        better troubleshoot their problems. </p>
-                      <p> <br> </p>
-                      <h1> GE Emerging Technologies Project </h1>
-                      <p> Summer 2016 | Web Application | HTML + CSS + jQuery </p>
-                      <p> Created a web application that verifies server and website availability of websites to help employees
-                        better troubleshoot their problems. </p>
-                      <p> <br> </p>
+
 
                       <h1> SynerGE Innovation Challenge </h1>
                       <p> Summer 2016 | Customer Experience Proposal </p>
@@ -297,10 +160,10 @@ text-align: left;
 
                     </div>
                     <div id = "photos">
-                      <div class = "caption">
+
                         <img src = "Singing.jpg" alt="Landscape">
-                        <span class = "captionSpan"> Singing </span>
-                      </div>
+
+
                       <img src = "IMG_8853.jpg" alt="Landscape">
                       <img src = "IMG_8209.jpg" alt="Landscape">
                       <img src = "Houston.jpg" alt="Landscape">
